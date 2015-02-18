@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movies!</title>
+  <link rel="stylesheet" href="index.css">
+
+
+  <script type="html/template" id="postTmpl">
+
+    <h2><%= title %></h2>
+    <img src='<%= photo %>'>
+    <p><%= content %></p>
+    <p><%= release %></p>
+    <button class="deletePost">Delete</button>
+    <button class="showEditForm">Edit</button>
+    <hr>
+    <div class="editForm">
+
+    <div><input type="text" class="editTitle" value="<%= title %>"></div>
+    <div><input type="text" class="editPhoto" value="<%= photo %>"></div>
+    <div><input type="text" class="editContent" value="<%= content %>"></div>
+    <div><input type="text" class="editAuthor" value="<%= release %>"></div>
+    <button class="editWholePost">Edit Form</button>
+
+ </script>
+</head>
+<body>
+<section>
+  <h1>This is where MOVIES go.</h1> <button class="showCreate">Add Movie</button>
+  <form action="" id="createPost">
+    <p><input type="text" name="newTitle" placeholder="Title"></p>
+    <p><input type="text" name="newPhoto" placeholder="Photo"></p>
+    <p><textarea name="newContent" id="" cols="30" rows="10" placeholder="Content"></textarea></p>
+
+    <p><input type="text" name="newrelease" placeholder="Release Date"></p>
+    <p><button type="submit">Create New Movie</button></p>
+  </form>
+
+  <!--  <form action="" id="createPost">
+    <p><input type="text" name="newTitle" placeholder="Title"></p>
+    <p><textarea name="newContent" id="" cols="30" rows="10" placeholder="Post Content"></textarea></p>
+    <p><input type="text" name="newAuthor" placeholder="Author"></p>
+    <p><button type="submit">Create New Post</button></p>
+  </form> -->
+
+
+</section>
+
+  <script src="bower_components/underscore/underscore.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/backbone/backbone.js"></script>
+
+  <!-- app files -->
+  <script src="model.js"></script>
+  <script src="collection.js"></script>
+  <script src="view.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+form {
+
+  display: none;
+}
+
+.show {
+  display: block;
+
+}
+
+.editForm {
+  display: none;
+}
+
+img {
+  width: 100px;
+}
+
+body {
+  padding: 45px;
+  margin: 15px;
+}
