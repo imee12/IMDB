@@ -4,9 +4,9 @@ var PostModel = Backbone.Model.extend ({
   defaults: function () {
     return {
 
-      title: "Experimenter",
+      // title: "Experimenter",
       photo: "images/experimenter_still.jpg",
-      content: "In 1961, famed social psychologist Stanley Milgram designed a psychology experiment in which people think they're delivering electric shocks to an affable stranger strapped into a chair in another room.",
+      // content: "In 1961, famed social psychologist Stanley Milgram designed a psychology experiment in which people think they're delivering electric shocks to an affable stranger strapped into a chair in another room.",
       release: "To Be Announced",
 
     };
@@ -14,6 +14,18 @@ var PostModel = Backbone.Model.extend ({
   },
     initialize: function () {
       console.log("model is created");
-},
+  },
+  validate: function (options) {
+    var errors = [];
+    if(!options.title) {
+
+      errors.push("Must include title");
+    }
+    if(!options.content) {
+      errors.push("Must have content!");
+
+    }
+    return errors.length > 0 ? errors : false;
+  }
 
 });

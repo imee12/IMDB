@@ -20,7 +20,7 @@
     <div><input type="text" class="editTitle" value="<%= title %>"></div>
     <div><input type="text" class="editPhoto" value="<%= photo %>"></div>
     <div><input type="text" class="editContent" value="<%= content %>"></div>
-    <div><input type="text" class="editAuthor" value="<%= release %>"></div>
+    <div><input type="text" class="editRelease" value="<%= release %>"></div>
     <button class="editWholePost">Edit Form</button>
 
  </script>
@@ -31,18 +31,13 @@
   <form action="" id="createPost">
     <p><input type="text" name="newTitle" placeholder="Title"></p>
     <p><input type="text" name="newPhoto" placeholder="Photo"></p>
-    <p><textarea name="newContent" id="" cols="30" rows="10" placeholder="Content"></textarea></p>
+    <p><textarea name="newContent" cols="30" rows="10"></textarea></p>
 
-    <p><input type="text" name="newrelease" placeholder="Release Date"></p>
+    <p><input type="text" name="newRelease" placeholder="Release Date"></p>
     <p><button type="submit">Create New Movie</button></p>
   </form>
 
-  <!--  <form action="" id="createPost">
-    <p><input type="text" name="newTitle" placeholder="Title"></p>
-    <p><textarea name="newContent" id="" cols="30" rows="10" placeholder="Post Content"></textarea></p>
-    <p><input type="text" name="newAuthor" placeholder="Author"></p>
-    <p><button type="submit">Create New Post</button></p>
-  </form> -->
+
 
 
 </section>
@@ -54,7 +49,7 @@
   <!-- app files -->
   <script src="model.js"></script>
   <script src="collection.js"></script>
-  <script src="view.js"></script>
+  <script src="views2.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
